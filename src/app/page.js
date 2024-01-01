@@ -26,12 +26,12 @@ const WhyUs = dynamic(() => import('../../components/index_c/whyUs'))
 
 export default function Home() {
   return (
-    
+    <>
       <Header/>
 
       <div className='h-6'/>
       <div id='location'>
-        
+
       <div className='flex flex-col pt-6 bg-white h-full w-full items-center'>
         <h1 className='
         text-2xl
@@ -42,7 +42,7 @@ export default function Home() {
 
       <div className='h-6'/>
       <div id='why-us'>
-        
+
       <div className='flex flex-col pt-6 bg-white h-full w-full items-center'>
         <h1 className='
         text-2xl
@@ -53,7 +53,7 @@ export default function Home() {
 
       <div className='h-6'/>
       <div id='teams'>
-        
+
       <div className='flex flex-col pt-6 bg-white h-full w-full items-center'>
         <h1 className='
         text-2xl
@@ -64,12 +64,12 @@ export default function Home() {
 
       <div className='h-6'/>
       <div id='faqs'>
-        
+
       <div className='flex flex-col pt-16 p-12 bg-white h-full w-full items-center'>
         <h1 className='
         text-2xl
         md:text-4xl'>QUESTIONS...?</h1>
-        <Accordion allowToggle className='pt-16 
+        <Accordion allowToggle className='pt-16
         w-full
         xl:w-7/12'>
 
@@ -89,7 +89,7 @@ export default function Home() {
               </div>
         ))}
 
-          
+
         </Accordion>
 
       </div>
@@ -97,15 +97,15 @@ export default function Home() {
 
       </div>
 
-    
-    
+
+    </>
   )
 }
 
 const questionElement = [
   {
     question: 'What is this club',
-    answer: 
+    answer:
     <div>
       <p className="pb-12">This club is for those who want to learn about working in developer field, not only coding but also Design, art, and QA. </p>
       {/* <a href='https://forms.gle/WEeVVa5fKjRgTQ2dA' className="w-fit rounded-full text-md font-medium hover:text-[#F5F5F7] hover:bg-[#1D1D1F] bg-[#F5F5F7] px-4 p-2" >
@@ -126,12 +126,12 @@ const questionElement = [
   //   answer: <>
   //     <p>As a student of ICT you can loan the student loan (กยศ.) type 1.</p>
   //     <p className='pb-6'>You can learn more by clicking the link below</p>
-      
+
   //     <a href='https://sites.google.com/view/musl-mahidol2564/' className="w-fit rounded-full text-md font-medium hover:text-[#F5F5F7] hover:bg-[#1D1D1F] bg-[#F5F5F7] px-4 p-2" >
   //     <Icon className="mr-1" as={BsLink} />
   //       Link
   //     </a>
-      
+
   //   </>,
   //   allowFile: 'hidden',
   //   fileRoot: '',
@@ -192,7 +192,7 @@ const questionElement = [
   // },
   // {
   //   question: 'If I choose Software Engineering track will I get B.Sc or B.E',
-  //   answer: 
+  //   answer:
   //   <p>Everyone graduated from any track of ICT will get The Bachelor of Science Program in Information and Communication Technology(B.Sc)</p>
   //   ,
   //   allowFile: 'hidden',

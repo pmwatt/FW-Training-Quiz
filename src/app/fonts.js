@@ -1,4 +1,4 @@
-import { 
+import {
   Instrument_Serif,
 } from 'next/font/google';
 
@@ -10,7 +10,7 @@ import {
 
 export const sarabun = Instrument_Serif({
   weight: ['400'],
-  subsets: ['THAI'],
+  subsets: ['latin'],
   display: 'swap',
   style: ['normal', 'italic']
 });
