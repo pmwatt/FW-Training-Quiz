@@ -1,4 +1,3 @@
-
 import dynamic from "next/dynamic";
 import React from "react";
 
@@ -16,13 +15,13 @@ import Image from "next/image"
 import { BsLink } from 'react-icons/bs'
 
 
-const QCard = dynamic(() => import('../../components/questionCard'))
+const QCard = dynamic(() => import('../components/questionCard'))
 
 
-const Header = dynamic(() => import('../../components/index_c/header'))
-const Location = dynamic(() => import('../../components/index_c/location'))
-const Teams = dynamic(() => import('../../components/index_c/teams'))
-const WhyUs = dynamic(() => import('../../components/index_c/whyUs'))
+const Header = dynamic(() => import('../components/index_c/header'))
+const Location = dynamic(() => import('../components/index_c/location'))
+const Teams = dynamic(() => import('../components/index_c/teams'))
+const WhyUs = dynamic(() => import('../components/index_c/whyUs'))
 
 export default function Home() {
   return (
