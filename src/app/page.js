@@ -26,77 +26,61 @@ const WhyUs = dynamic(() => import('../components/index_c/whyUs'))
 export default function Home() {
   return (
     <>
-      <Header/>
-
-      <div className='h-6'/>
+      <Header />
+      <div className='h-6' />
       <div id='location'>
-
-      <div className='flex flex-col pt-6 bg-white h-full w-full items-center'>
-        <h1 className='
+        <div className='flex flex-col pt-6 bg-white h-full w-full items-center'>
+          <h1 className='
         text-2xl
         md:text-4xl'>Location</h1>
-          <Location/>
+          <Location />
         </div>
       </div>
-
-      <div className='h-6'/>
+      <div className='h-6' />
       <div id='why-us'>
-
-      <div className='flex flex-col pt-6 bg-white h-full w-full items-center'>
-        <h1 className='
+        <div className='flex flex-col pt-6 bg-white h-full w-full items-center'>
+          <h1 className='
         text-2xl
         md:text-4xl'>Why Us?</h1>
-          <WhyUs/>
+          <WhyUs />
         </div>
       </div>
-
-      <div className='h-6'/>
+      <div className='h-6' />
       <div id='teams'>
-
-      <div className='flex flex-col pt-6 bg-white h-full w-full items-center'>
-        <h1 className='
+        <div className='flex flex-col pt-6 bg-white h-full w-full items-center'>
+          <h1 className='
         text-2xl
         md:text-4xl'>Teams</h1>
-          <Teams/>
+          <Teams />
         </div>
       </div>
-
-      <div className='h-6'/>
+      <div className='h-6' />
       <div id='faqs'>
-
-      <div className='flex flex-col pt-16 p-12 bg-white h-full w-full items-center'>
-        <h1 className='
+        <div className='flex flex-col pt-16 p-12 bg-white h-full w-full items-center'>
+          <h1 className='
         text-2xl
         md:text-4xl'>QUESTIONS...?</h1>
-        <Accordion allowToggle className='pt-16
+          <Accordion allowToggle className='pt-16
         w-full
         xl:w-7/12'>
-
-        {questionElement.map((cardE, index) => (
+            {questionElement.map((cardE, index) => (
               <div key={index}>
                 <QCard
-                question={cardE.question}
-                answer={cardE.answer}
-                allowImg={cardE.allowImg}
-                allowFile={cardE.allowFile}
-                imgL={cardE.imgL}
-                imgAlt={cardE.imgAlt}
-                fileRoot={cardE.fileRoot}
-                filename={cardE.filename}
-                fileName={cardE.fileName}
+                  question={cardE.question}
+                  answer={cardE.answer}
+                  allowImg={cardE.allowImg}
+                  allowFile={cardE.allowFile}
+                  imgL={cardE.imgL}
+                  imgAlt={cardE.imgAlt}
+                  fileRoot={cardE.fileRoot}
+                  filename={cardE.filename}
+                  fileName={cardE.fileName}
                 ></QCard>
               </div>
-        ))}
-
-
-        </Accordion>
-
+            ))}
+          </Accordion>
+        </div>
       </div>
-
-
-      </div>
-
-
     </>
   )
 }
@@ -105,16 +89,16 @@ const questionElement = [
   {
     question: 'What is this club',
     answer:
-    <div>
-      <p className="pb-12">This club is for those who want to learn about working in developer field, not only coding but also Design, art, and QA. </p>
-      {/* <a href='https://forms.gle/WEeVVa5fKjRgTQ2dA' className="w-fit rounded-full text-md font-medium hover:text-[#F5F5F7] hover:bg-[#1D1D1F] bg-[#F5F5F7] px-4 p-2" >
+      <div>
+        <p className="pb-12">This club is for those who want to learn about working in developer field, not only coding but also Design, art, and QA. </p>
+        {/* <a href='https://forms.gle/WEeVVa5fKjRgTQ2dA' className="w-fit rounded-full text-md font-medium hover:text-[#F5F5F7] hover:bg-[#1D1D1F] bg-[#F5F5F7] px-4 p-2" >
       <Icon className="mr-1" as={BsLink} />
         Apply Now
       </a> */}
 
-      {/* <p>As your senior, I recommend you to exempt because you can take more foreign languages available such as German(I, II), and Chinese(I, II).</p> */}
-      {/* <div className="p-4 flex flex-col items-center"><Image width={478} height={692} alt='English Exemption documents' src='/asset/forQuestion/English_exemption_doc.webp' loading="lazy"/></div> */}
-    </div>,
+        {/* <p>As your senior, I recommend you to exempt because you can take more foreign languages available such as German(I, II), and Chinese(I, II).</p> */}
+        {/* <div className="p-4 flex flex-col items-center"><Image width={478} height={692} alt='English Exemption documents' src='/asset/forQuestion/English_exemption_doc.webp' loading="lazy"/></div> */}
+      </div>,
     allowFile: 'hidden',//if allow '', if not 'hidden'
     fileRoot: '/downloads/project1_leak.pdf',
     filename: 'project1_leak.pdf',
