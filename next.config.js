@@ -5,7 +5,7 @@ module.exports = nextConfig
 
 module.exports = {
   images: {
-    domains: [''],
+    domains: ['firebasestorage.googleapis.com'],
   },
 future: {
     serverComponents: true, // Enable Server Actions
@@ -13,5 +13,5 @@ future: {
 experimental: {
     serverActions: true,
   },
- testEnvironment: "node", 
+ testEnvironment: "node",
 }
