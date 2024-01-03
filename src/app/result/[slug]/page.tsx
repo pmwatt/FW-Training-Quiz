@@ -194,3 +194,4 @@ const teams = [
     color: 'text-[#FFC700]',
   },
 ]
+export { teams };
