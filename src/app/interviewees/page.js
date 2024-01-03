@@ -1,6 +1,7 @@
 'use client'
 import {
     Link,
+    NumberInput,
     NumberInputField,
   } from '@chakra-ui/react'
 
@@ -8,7 +9,7 @@ import {
   import React, { useRef } from 'react';
 export default function Check() {
     const [value, setValue] = React.useState('')
-    
+
     return (
     <>
     <div class="flex flex-col h-screen items-center justify-center">
